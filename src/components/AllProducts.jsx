@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-const Home = () => {
+import Product from "./Product";
+
+const AllProducts = () => {
   const [data, setData] = useState([]);
   const url = "https://fakestoreapi.com/products";
 
@@ -17,11 +19,13 @@ const Home = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
   return (
     <div>
-      <h1> Home </h1>
+      <h1> Welcome to our store! </h1>
+      <Product data={data} />
     </div>
   );
 };
 
-export default Home;
+export default AllProducts;

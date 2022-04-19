@@ -1,9 +1,9 @@
-import Home from "../components/Home";
+import AllProducts from "../components/AllProducts";
 
 const HomePage = () => {
   return (
     <div>
-      <Home />
+      <AllProducts />
     </div>
   );
 };

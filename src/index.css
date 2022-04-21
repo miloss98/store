@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 
 :root {
-  --navbar: #c9d6df;
-  --background: #f0f5f9;
+  --navbar: #f0f5f9;
+  --background: #c9d6df;
   --primary: #52616b;
   --secondary: #1e2022;
   --btn-active: #ffa273;

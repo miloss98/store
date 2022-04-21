@@ -1,17 +1,22 @@
 import logo from "./../assets/images/logo.png";
-
-import StyledNavbar, { StyledNavLink } from "../styled/StyledNavbar";
+import StyledNavbar, {
+  StyledNavList,
+  StyledNavLink,
+  StyledContainer,
+} from "../styled/StyledNavbar";
 
 const Navbar = () => {
   return (
     <StyledNavbar>
-      <div>
+      {/*  Logo */}
+      <StyledContainer>
         <img src={logo} alt="logo" />
-      </div>
-      <section>
-        <ul>
+      </StyledContainer>
+      {/*  Nav links */}
+      <StyledContainer>
+        <StyledNavList>
           <li>
-            <StyledNavLink to="/"> Home </StyledNavLink>
+            <StyledNavLink to="/">Home</StyledNavLink>
           </li>
           <li>
             <StyledNavLink to="/about"> About </StyledNavLink>
@@ -19,8 +24,8 @@ const Navbar = () => {
           <li>
             <StyledNavLink to="/contact"> Contact </StyledNavLink>
           </li>
-        </ul>
-      </section>
+        </StyledNavList>
+      </StyledContainer>
     </StyledNavbar>
   );
 };

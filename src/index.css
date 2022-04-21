@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
 :root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 15px;
+  --navbar: #c9d6df;
+  --background: #f0f5f9;
+  --primary: #52616b;
+  --secondary: #1e2022;
 }

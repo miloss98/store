@@ -1,4 +1,4 @@
-import React from "react";
+import StyledProduct from "../styled/StyledProduct";
 
 const Product = ({ data }) => {
   return (
@@ -6,13 +6,13 @@ const Product = ({ data }) => {
       {data.map((item) => {
         const { id, title, price, description, category, image, rating } = item;
         return (
-          <article key={id}>
+          <StyledProduct key={id}>
             <h4> {title} </h4>
             <p> Price: ${price} </p>
-            <p> {description} </p>
             <img src={image} alt={title} />
+            <p> {description} </p>
             <p> Rating: {rating.rate} / 5 </p>
-          </article>
+          </StyledProduct>
         );
       })}
     </>

@@ -13,8 +13,12 @@ const Product = ({ data }) => {
             <h4> {title} </h4>
             <img src={image} alt={title} />
             <StyledDetails>
-              <p> Price: ${price} </p>
-              <p> Rating: {rating.rate} / 5 </p>
+              <p>
+                Price: <span> ${price} </span>
+              </p>
+              <p>
+                Rating: <span>{rating.rate} / 5</span>{" "}
+              </p>
             </StyledDetails>
             <StyledButton> Show more</StyledButton>
           </StyledProduct>

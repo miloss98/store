@@ -20,6 +20,13 @@ const StyledProduct = styled.article`
     height: 50%;
     width: 95%;
   }
+  p {
+    font-weight: bold;
+    color: var(--background);
+  }
+  p span {
+    color: var(--btn-hover);
+  }
 `;
 export const StyledDetails = styled.div`
   height: 10%;

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import StyledHomePage, {
+import StyledAllProducts, {
   StyledProductsContainer,
   StyledHeadingDiv,
-} from "../styled/StyledHomePage";
+} from "../styled/StyledAllProducts";
 import Product from "./Product";
 
 const AllProducts = () => {
@@ -25,14 +25,14 @@ const AllProducts = () => {
   }, []);
 
   return (
-    <StyledHomePage>
+    <StyledAllProducts>
       <StyledHeadingDiv>
         <h1> Welcome to our store! </h1>
       </StyledHeadingDiv>
       <StyledProductsContainer>
         <Product data={data} />
       </StyledProductsContainer>
-    </StyledHomePage>
+    </StyledAllProducts>
   );
 };
 

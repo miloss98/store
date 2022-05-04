@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledHomePage = styled.div`
+const StyledAllProducts = styled.div`
   width: 100%;
   height: 100%;
   background-color: var(--secondary);
@@ -21,11 +21,15 @@ export const StyledHeadingDiv = styled.div`
 `;
 
 export const StyledProductsContainer = styled.section`
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin: 1rem;
 `;
 
-export default StyledHomePage;
+export default StyledAllProducts;

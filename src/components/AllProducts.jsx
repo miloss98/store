@@ -3,6 +3,7 @@ import axios from "axios";
 import StyledAllProducts, {
   StyledProductsContainer,
   StyledHeadingDiv,
+  StyledFilterButtonsDiv,
 } from "../styled/StyledAllProducts";
 import Product from "./Product";
 
@@ -29,6 +30,13 @@ const AllProducts = () => {
       <StyledHeadingDiv>
         <h1> Welcome to our store! </h1>
       </StyledHeadingDiv>
+      <StyledFilterButtonsDiv>
+        <button> all </button>
+        <button> man </button>
+        <button> woman </button>
+        <button> jewelery </button>
+        <button> electronics </button>
+      </StyledFilterButtonsDiv>
       <StyledProductsContainer>
         <Product data={data} />
       </StyledProductsContainer>

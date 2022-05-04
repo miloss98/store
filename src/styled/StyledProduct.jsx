@@ -37,6 +37,7 @@ export const StyledDetails = styled.div`
 
 export const StyledButton = styled.button`
   border: none;
+  border-radius: 0.5rem;
   background: var(--btn-active);
   color: var(--black);
   font-weight: bolder;
@@ -44,6 +45,9 @@ export const StyledButton = styled.button`
   padding: 0.5rem;
   & {
     cursor: pointer;
+  }
+  &:hover {
+    filter: brightness(80%);
   }
 `;
 

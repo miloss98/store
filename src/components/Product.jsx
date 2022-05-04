@@ -1,17 +1,22 @@
-import StyledProduct from "../styled/StyledProduct";
+import StyledProduct, {
+  StyledButton,
+  StyledDetails,
+} from "../styled/StyledProduct";
 
 const Product = ({ data }) => {
   return (
     <>
       {data.map((item) => {
-        const { id, title, price, description, category, image, rating } = item;
+        const { id, title, price, image, rating } = item;
         return (
           <StyledProduct key={id}>
             <h4> {title} </h4>
-            <p> Price: ${price} </p>
             <img src={image} alt={title} />
-            <p> {description} </p>
-            <p> Rating: {rating.rate} / 5 </p>
+            <StyledDetails>
+              <p> Price: ${price} </p>
+              <p> Rating: {rating.rate} / 5 </p>
+            </StyledDetails>
+            <StyledButton> Show more</StyledButton>
           </StyledProduct>
         );
       })}

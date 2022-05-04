@@ -38,7 +38,7 @@ export const StyledDetails = styled.div`
 export const StyledButton = styled.button`
   border: none;
   background: var(--btn-active);
-  color: black;
+  color: var(--black);
   font-weight: bolder;
   font-size: 0.8rem;
   padding: 0.5rem;

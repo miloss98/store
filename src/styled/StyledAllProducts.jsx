@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledAllProducts = styled.div`
   width: 100%;
   height: 100%;
-  background-color: var(--secondary);
+  background-color: #262626;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -3,8 +3,9 @@
 :root {
   --navbar: #f0f5f9;
   --item-background: #c9d6df;
-  --background: #52616b;
-  --secondary: #1e2022;
+  --background: #262626;
+  --secondary: #52616b;
+  --black: #1e2022;
   --btn-active: #ffa273;
   --btn-hover: #0068d9;
 }

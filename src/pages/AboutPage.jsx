@@ -1,14 +1,12 @@
-import StyledAboutPage, {
-  StyledAboutContainer,
-} from "../styled/StyledAboutPage";
+import StyledPage, { StyledContainer } from "../styled/StyledPage";
 
 const AboutPage = () => {
   return (
-    <StyledAboutPage>
-      <StyledAboutContainer>
+    <StyledPage>
+      <StyledContainer>
         <div>
           <h1>About page</h1>
-          <p> Informations: </p>
+          <h2> Informations: </h2>
           <p>
             {" "}
             This is a React.js project. Project is made of external libraries
@@ -16,8 +14,8 @@ const AboutPage = () => {
             Fake Store API{" "}
           </p>
         </div>
-      </StyledAboutContainer>
-    </StyledAboutPage>
+      </StyledContainer>
+    </StyledPage>
   );
 };
 

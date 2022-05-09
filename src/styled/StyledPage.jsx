@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledAboutPage = styled.div`
+const StyledPage = styled.div`
   width: 100vw;
   height: 86vh;
   display: flex;
@@ -9,8 +9,7 @@ const StyledAboutPage = styled.div`
   align-items: center;
   background-color: var(--background);
 `;
-
-export const StyledAboutContainer = styled.section`
+export const StyledContainer = styled.div`
   width: 60vw;
   height: 60vh;
   display: flex;
@@ -18,7 +17,7 @@ export const StyledAboutContainer = styled.section`
   justify-content: flex-start;
   align-items: center;
   background-color: var(--item-background);
-
+  border-radius: 10px;
   div {
     display: flex;
     flex-direction: column;
@@ -33,12 +32,29 @@ export const StyledAboutContainer = styled.section`
       font-size: 2rem;
       font-weight: 600;
     }
+    h2 {
+      padding-bottom: 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
     p {
       font-size: 1.2rem;
       letter-spacing: 2px;
       padding-bottom: 1.5rem;
     }
+    button {
+      margin-top: 3rem;
+      height: 2rem;
+      width: 5rem;
+      background: var(--btn-hover);
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(80%);
+      }
+    }
   }
 `;
-
-export default StyledAboutPage;
+export default StyledPage;

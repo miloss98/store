@@ -16,7 +16,7 @@ export const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--item-background);
+  background-color: ${(props) => props.backgroundColor};
   border-radius: 10px;
   div {
     display: flex;

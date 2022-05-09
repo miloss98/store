@@ -4,7 +4,7 @@ const ErrorPage = () => {
   const navigate = useNavigate();
   return (
     <StyledPage>
-      <StyledContainer>
+      <StyledContainer backgroundColor={"var(--red)"}>
         <div>
           <h1>
             Error 404! <br></br> Page not found!

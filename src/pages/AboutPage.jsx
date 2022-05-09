@@ -3,7 +3,7 @@ import StyledPage, { StyledContainer } from "../styled/StyledPage";
 const AboutPage = () => {
   return (
     <StyledPage>
-      <StyledContainer>
+      <StyledContainer backgroundColor={"var(--item-background)"}>
         <div>
           <h1>About page</h1>
           <h2> Informations: </h2>

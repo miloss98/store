@@ -2,7 +2,7 @@ import StyledPage, { StyledContainer } from "../styled/StyledPage";
 const ContactPage = () => {
   return (
     <StyledPage>
-      <StyledContainer>
+      <StyledContainer backgroundColor={"var(--item-background)"}>
         <div>
           <h1>Contact us: </h1>
           <p>

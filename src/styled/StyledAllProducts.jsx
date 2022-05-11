@@ -56,7 +56,7 @@ export const StyledProductsContainer = styled.section`
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 1rem;
   row-gap: 1rem;
   margin: 1rem;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledProduct = styled.article`
   height: 500px;
-  width: 330px;
+  width: 320px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;

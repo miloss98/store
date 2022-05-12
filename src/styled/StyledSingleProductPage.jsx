@@ -11,8 +11,8 @@ const StyledSingleProductPage = styled.div`
 `;
 
 export const StyledSingleProductContainer = styled.section`
-  height: 50%;
-  width: 50%;
+  height: 55%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;

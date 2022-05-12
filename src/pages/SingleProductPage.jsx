@@ -39,7 +39,7 @@ const SingleProductPage = () => {
           <p> Description: {product.description} </p>
           <p> Price: {product.price} </p>
           <p> Rating: {product.rating?.rate} </p>
-          <p> Count: {product.rating?.count} </p>
+          <p> Available: {product.rating?.count} </p>
         </StyledSingleProductSection>
       </StyledSingleProductContainer>
     </StyledSingleProductPage>

@@ -1,5 +1,6 @@
 import StyledProduct, {
   StyledButton,
+  StyledLink,
   StyledDetails,
 } from "../styled/StyledProduct";
 
@@ -20,7 +21,9 @@ const Product = ({ data }) => {
                 Rating: <span>{rating.rate} / 5</span>{" "}
               </p>
             </StyledDetails>
-            <StyledButton> Show more</StyledButton>
+            <StyledButton>
+              <StyledLink to={`/product/${id}`}>Show more </StyledLink>
+            </StyledButton>
           </StyledProduct>
         );
       })}

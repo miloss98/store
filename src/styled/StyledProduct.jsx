@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledProduct = styled.article`
   height: 500px;
@@ -49,6 +50,10 @@ export const StyledButton = styled.button`
   &:hover {
     filter: brightness(80%);
   }
+`;
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: var(--black);
 `;
 
 export default StyledProduct;

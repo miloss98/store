@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import StyledSingleProductPage, {
+  StyledSingleProductContainer,
+  StyledSingleProductSection,
+} from "../styled/StyledSingleProductPage";
 
 const url = "https://fakestoreapi.com/products";
 
@@ -21,15 +25,24 @@ const SingleProductPage = () => {
   }, []);
 
   return (
-    <section key={product.id}>
-      <h1> {product.title}</h1>
-      <img src={product.image} alt={product.title} />
-      <p> price: {product.price} </p>
-      <p> rating: {product.rating?.rate} </p>
-      <p> count: {product.rating?.count} </p>
-      <p> {product.description} </p>
-      <p> {product.category} </p>
-    </section>
+    <StyledSingleProductPage key={product.id}>
+      <StyledSingleProductContainer>
+        {/* Left Section */}
+        <StyledSingleProductSection>
+          <img src={product.image} alt={product.title} />
+        </StyledSingleProductSection>
+
+        {/* Right Section */}
+        <StyledSingleProductSection>
+          <h1> {product.title}</h1>
+          <p> Category: {product.category} </p>
+          <p> Description: {product.description} </p>
+          <p> Price: {product.price} </p>
+          <p> Rating: {product.rating?.rate} </p>
+          <p> Count: {product.rating?.count} </p>
+        </StyledSingleProductSection>
+      </StyledSingleProductContainer>
+    </StyledSingleProductPage>
   );
 };
 

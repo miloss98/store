@@ -18,7 +18,7 @@ const Product = ({ data }) => {
                 Price: <span> ${price} </span>
               </p>
               <p>
-                Rating: <span>{rating.rate} / 5</span>{" "}
+                Rating: <span>{rating.rate}/5</span>{" "}
               </p>
             </StyledDetails>
             <StyledButton>

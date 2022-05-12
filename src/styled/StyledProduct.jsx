@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const StyledProduct = styled.article`
-  height: 500px;
-  width: 320px;
+  height: 380px;
+  width: 250px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -12,9 +12,9 @@ const StyledProduct = styled.article`
   background-color: var(--item-background);
   padding-top: 1rem;
   h4 {
-    height: 15%;
+    height: 10%;
     width: 80%;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-align: center;
   }
   img {
@@ -22,10 +22,13 @@ const StyledProduct = styled.article`
     width: 95%;
   }
   p {
+    font-size: 0.8rem;
     font-weight: bold;
     color: var(--background);
   }
   p span {
+    font-size: 0.8rem;
+    font-weight: bold;
     color: var(--btn-hover);
   }
 `;

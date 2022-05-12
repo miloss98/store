@@ -8,6 +8,22 @@ const StyledSingleProductPage = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--background);
+  button {
+    position: absolute;
+    transform: translateY(-200px);
+    height: 2rem;
+    width: 5.5rem;
+    background: var(--btn-hover);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover {
+      cursor: pointer;
+      filter: brightness(80%);
+    }
+  }
 `;
 
 export const StyledSingleProductContainer = styled.section`

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import StyledSingleProductPage, {
   StyledSingleProductContainer,
@@ -11,6 +11,8 @@ const url = "https://fakestoreapi.com/products";
 const SingleProductPage = () => {
   const [product, setProduct] = useState([]);
   const { productID } = useParams();
+
+  const navigate = useNavigate();
 
   const getSingleProduct = async () => {
     const response = await axios.get(`${url}/${productID}`);
@@ -29,6 +31,7 @@ const SingleProductPage = () => {
       <StyledSingleProductContainer>
         {/* Left Section */}
         <StyledSingleProductSection>
+          <button onClick={() => navigate(-1)}> back</button>
           <img src={product.image} alt={product.title} />
         </StyledSingleProductSection>
 

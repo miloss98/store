@@ -35,11 +35,21 @@ const SingleProductPage = () => {
         {/* Right Section */}
         <StyledSingleProductSection>
           <h1> {product.title}</h1>
-          <p> Category: {product.category} </p>
-          <p> Description: {product.description} </p>
-          <p> Price: {product.price} </p>
-          <p> Rating: {product.rating?.rate} </p>
-          <p> Available: {product.rating?.count} </p>
+          <p>
+            <span>Category:</span> {product.category}
+          </p>
+          <p>
+            <span>Description:</span> {product.description}
+          </p>
+          <p>
+            <span>Price:</span> ${product.price}
+          </p>
+          <p>
+            <span>Rating: </span> {product.rating?.rate}
+          </p>
+          <p>
+            <span>Available:</span> {product.rating?.count}
+          </p>
         </StyledSingleProductSection>
       </StyledSingleProductContainer>
     </StyledSingleProductPage>

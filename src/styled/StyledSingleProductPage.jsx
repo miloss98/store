@@ -32,6 +32,18 @@ export const StyledSingleProductSection = styled.section`
     width: 90%;
     border-radius: 10px;
   }
+  h1 {
+    color: var(--btn-active);
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+  span {
+    color: var(--btn-hover);
+  }
+  p {
+    padding-bottom: 0.3rem;
+    font-weight: 600;
+  }
 `;
 
 export default StyledSingleProductPage;

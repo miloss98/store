@@ -31,7 +31,6 @@ const SingleProductPage = () => {
       <StyledSingleProductContainer>
         {/* Left Section */}
         <StyledSingleProductSection>
-          <button onClick={() => navigate(-1)}> back</button>
           <img src={product.image} alt={product.title} />
         </StyledSingleProductSection>
 
@@ -53,6 +52,7 @@ const SingleProductPage = () => {
           <p>
             <span>Available:</span> {product.rating?.count}
           </p>
+          <button onClick={() => navigate(-1)}> Go back</button>
         </StyledSingleProductSection>
       </StyledSingleProductContainer>
     </StyledSingleProductPage>

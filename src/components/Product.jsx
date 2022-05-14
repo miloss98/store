@@ -4,7 +4,7 @@ import StyledProduct, {
   StyledDetails,
 } from "../styled/StyledProduct";
 
-const Product = ({ filteredData }) => {
+const Product = ({ filteredData, addToCart }) => {
   return (
     <>
       {filteredData.map((item) => {
@@ -23,6 +23,9 @@ const Product = ({ filteredData }) => {
             </StyledDetails>
             <StyledButton>
               <StyledLink to={`/product/${id}`}>Show more </StyledLink>
+            </StyledButton>
+            <StyledButton onClick={() => addToCart(id)}>
+              Add to cart
             </StyledButton>
           </StyledProduct>
         );

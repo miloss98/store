@@ -14,6 +14,7 @@ const AllProducts = () => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [cart, setCart] = useState([]);
 
   const fetchData = async () => {
     try {
@@ -40,6 +41,13 @@ const AllProducts = () => {
     setFilteredData(data.filter((item) => item.category === category));
   };
 
+  const addToCart = (id) => {
+    const cartItem = data.filter((item) => {
+      if (item.id === id) return item;
+    });
+    setCart([...cart, cartItem]);
+  };
+
   useEffect(() => {
     fetchData();
     fetchCategories();
@@ -60,7 +68,7 @@ const AllProducts = () => {
         })}
       </StyledFilterButtonsDiv>
       <StyledProductsContainer>
-        <Product filteredData={filteredData} />
+        <Product filteredData={filteredData} addToCart={addToCart} />
       </StyledProductsContainer>
     </StyledAllProducts>
   );

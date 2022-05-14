@@ -25,7 +25,7 @@ const StyledSingleProductPage = styled.div`
 `;
 
 export const StyledSingleProductContainer = styled.section`
-  height: 55%;
+  height: 65%;
   width: 70%;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ export const StyledSingleProductContainer = styled.section`
 `;
 export const StyledSingleProductSection = styled.section`
   width: 45%;
-  height: 75%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;

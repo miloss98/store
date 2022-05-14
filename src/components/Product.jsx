@@ -4,10 +4,10 @@ import StyledProduct, {
   StyledDetails,
 } from "../styled/StyledProduct";
 
-const Product = ({ data }) => {
+const Product = ({ filteredData }) => {
   return (
     <>
-      {data.map((item) => {
+      {filteredData.map((item) => {
         const { id, title, price, image, rating } = item;
         return (
           <StyledProduct key={id}>

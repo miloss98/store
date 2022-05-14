@@ -24,6 +24,9 @@ const Navbar = () => {
           <li>
             <StyledNavLink to="/contact"> Contact </StyledNavLink>
           </li>
+          <li>
+            <StyledNavLink to="/cart"> Cart </StyledNavLink>
+          </li>
         </StyledNavList>
       </StyledContainer>
     </StyledNavbar>

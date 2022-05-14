@@ -7,18 +7,12 @@ import StyledAllProducts, {
 } from "../styled/StyledAllProducts";
 import Product from "./Product";
 
-const allCategories = [
-  "all",
-  "jewelery",
-  "electronics",
-  "men's clothing",
-  "women's clothing",
-];
-
 const AllProducts = () => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
+  const [categories, setCategories] = useState([]);
   const url = "https://fakestoreapi.com/products";
+  const categoriesUrl = "https://fakestoreapi.com/products/categories";
 
   const fetchData = async () => {
     try {
@@ -31,6 +25,11 @@ const AllProducts = () => {
     }
   };
 
+  const fetchCategories = async () => {
+    const request = await axios.get(categoriesUrl);
+    const response = request.data;
+    setCategories(["all", ...response]);
+  };
   const filter = (category) => {
     if (category === "all") {
       fetchData();
@@ -41,6 +40,7 @@ const AllProducts = () => {
 
   useEffect(() => {
     fetchData();
+    fetchCategories();
   }, []);
 
   return (
@@ -49,7 +49,7 @@ const AllProducts = () => {
         <h1> Welcome to our store! </h1>
       </StyledHeadingDiv>
       <StyledFilterButtonsDiv>
-        {allCategories.map((categories, id) => {
+        {categories.map((categories, id) => {
           return (
             <button key={id} onClick={() => filter(categories)}>
               {categories}

@@ -1,5 +1,6 @@
 import {
   HomePage,
+  CartPage,
   AboutPage,
   ContactPage,
   SingleProductPage,
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route element={<SharedLayout />}>
             <Route index="/" element={<HomePage />} />
+            <Route path="/cart" element={<CartPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="product/:productID" element={<SingleProductPage />} />

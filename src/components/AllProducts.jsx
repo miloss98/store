@@ -7,12 +7,13 @@ import StyledAllProducts, {
 } from "../styled/StyledAllProducts";
 import Product from "./Product";
 
+const url = "https://fakestoreapi.com/products";
+const categoriesUrl = "https://fakestoreapi.com/products/categories";
+
 const AllProducts = () => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [categories, setCategories] = useState([]);
-  const url = "https://fakestoreapi.com/products";
-  const categoriesUrl = "https://fakestoreapi.com/products/categories";
 
   const fetchData = async () => {
     try {
@@ -30,6 +31,7 @@ const AllProducts = () => {
     const response = request.data;
     setCategories(["all", ...response]);
   };
+
   const filter = (category) => {
     if (category === "all") {
       fetchData();

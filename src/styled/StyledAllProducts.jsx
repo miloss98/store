@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledAllProducts = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: 86vh;
   background-color: var(--background);
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ export const StyledFilterButtonsDiv = styled.div`
 
   button {
     width: 7rem;
-    height: 2.5rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;

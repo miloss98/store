@@ -2,7 +2,7 @@ import StyledPage, { StyledContainer } from "../styled/StyledPage";
 const ContactPage = () => {
   return (
     <StyledPage>
-      <StyledContainer backgroundColor={"var(--item-background)"}>
+      <StyledContainer backgroundColor={"var(--btn-active)"}>
         <div>
           <h1>Contact us: </h1>
           <p>
